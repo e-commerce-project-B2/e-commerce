@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+     /* Ajoutez cette classe CSS pour rendre le header sticky */
+ .sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+     z-index: 1000;
+     animation: slideDown 0.5s ease-in-out;
+ }
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
